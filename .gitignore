@@ -1,0 +1,14 @@
+#保存の必要のないファイル
+Assets/Fonts/
+Assets/Music/
+Assets/NendAd/
+etc/
+Builds/
+Library/
+obj/
+Temp/
+CubePuzzle.userprefs
+UnityPackageManager/
+CubePuzzle.csproj
+CubePuzzle.Editor.csproj
+CubePuzzle.sln
