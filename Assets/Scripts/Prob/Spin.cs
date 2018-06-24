@@ -9,11 +9,8 @@ public class Spin : MonoBehaviour {
     public Texture[] texture;
     private int nTexture;
     private int i, j;
-    public GameObject Partner;
-    private float Partner_x;
-    private float Partner_z;
-
-    private AudioSource TransportSE;
+   
+    private AudioSource SpinSE;
 
     void Start() {
         nTexture = texture.Length;
@@ -22,7 +19,7 @@ public class Spin : MonoBehaviour {
         Cube = GameObject.Find("ControllCube");
         ControllCube = Cube.GetComponent<ControllCube>();
 
-        TransportSE = GetComponent<AudioSource>();
+		SpinSE = GetComponent<AudioSource>();
     }
 
     void Update() {
@@ -36,8 +33,8 @@ public class Spin : MonoBehaviour {
     void OnCollisionStay(Collision collision) {
         if(collision.gameObject.tag == "Cube") {
             if(ControllCube.isCubeStop()) {
-                ControllCube.State2Transport(Partner_x, Partner_z);
-                TransportSE.Play();
+				ControllCube.State2Spin();
+				SpinSE.Play();
             }
         }
     }

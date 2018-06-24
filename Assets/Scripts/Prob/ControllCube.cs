@@ -135,13 +135,14 @@ public class ControllCube : MonoBehaviour {
                 }
                 break;
 
-            case STATE.spin :
-
-
+			case STATE.spin :
+				transform.eulerAngles = new Vector3(transform.eulerAngles.x, transform.eulerAngles.y+30, transform.eulerAngles.z);
                 spin_time--;
                 if(spin_time == 0) {
                     spin_time = nSpin;
                     State2Stop();
+					transform.position = new Vector3(transform.position.x, 0.03f, transform.position.z);
+					Debug.Log("ストップ！！！");
                 }
                 break;
         }
@@ -226,8 +227,8 @@ public class ControllCube : MonoBehaviour {
 
     public void State2Spin() {
         if(state == STATE.stop) {
-            state = STATE.spin;
-            Position = new Vector3(Position.x, 0.03f, Position.y);
+			state = STATE.spin;
+			Position = new Vector3(transform.position.x, 0.03f, transform.position.z);
         }
     }
 
