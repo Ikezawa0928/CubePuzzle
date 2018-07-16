@@ -26,8 +26,9 @@ public class TitleController : MonoBehaviour {
         NendAdInterstitial.Instance.Load("e7c37441fe1d734cab05e0e317788a89054b6602","712656");
         #endif
 
-        TotalStars = PlayerPrefs.GetInt("nTotalStars");
-    }
+		PlayerPrefs.SetInt("nTotalStars", 71); //デバッグ用 配信するときは外す
+		TotalStars = PlayerPrefs.GetInt("nTotalStars");
+	}
 
     void Update () {
         switch(state) {

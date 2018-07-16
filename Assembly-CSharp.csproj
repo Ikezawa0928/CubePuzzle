@@ -57,6 +57,12 @@
     <Reference Include="UnityEditor">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.StandardEvents">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\NendAd\Scripts\AD\FullBoard\NendAdFullBoard.cs" />
@@ -154,6 +160,7 @@
     <Compile Include="Assets\Scripts\Prob\ResetButton.cs" />
     <Compile Include="Assets\Scripts\Prob\Slide.cs" />
     <Compile Include="Assets\Scripts\Prob\Spin.cs" />
+    <Compile Include="Assets\Scripts\Prob\StageGenerator.cs" />
     <Compile Include="Assets\Scripts\Prob\toTitleButtonNo.cs" />
     <Compile Include="Assets\Scripts\Prob\toTitleButtonYes.cs" />
     <Compile Include="Assets\Scripts\Prob\Transport.cs" />

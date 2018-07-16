@@ -142,7 +142,6 @@ public class ControllCube : MonoBehaviour {
                     spin_time = nSpin;
                     State2Stop();
 					transform.position = new Vector3(transform.position.x, 0.03f, transform.position.z);
-					Debug.Log("ストップ！！！");
                 }
                 break;
         }

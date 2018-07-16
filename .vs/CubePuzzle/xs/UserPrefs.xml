@@ -1,12 +1,11 @@
 ﻿<Properties StartupConfiguration="{A81C593F-41D8-BFD9-C54A-E4B379DBC1B9}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Prob/Spin.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Prob/StageGenerator.cs">
     <Files>
-      <File FileName="Assets/Scripts/Prob/Transport.cs" Line="45" Column="5" />
-      <File FileName="Assets/Scripts/Prob/ControllCube.cs" Line="231" Column="4" />
-      <File FileName="Assets/Scripts/Prob/Spin.cs" Line="22" Column="40" />
-      <File FileName="Assets/Scripts/Title/Message.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Title/LoadProb.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Title/LeftScrollButton.cs" Line="9" Column="10" />
+      <File FileName="Assets/Scripts/Title/TitleController.cs" Line="29" Column="59" />
+      <File FileName="Assets/Scripts/Prob/StageGenerator.cs" Line="32" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
